@@ -19,6 +19,13 @@
   	<script src="https://code.jquery.com/jquery.js"></script>
   	<!-- Include all compiled plugins (below), or include individual files as needed -->
   	<script src="js/bootstrap.min.js"></script>
+  	<script>
+
+  	jQuery(function ($) {
+  		$("a").tooltip()
+  	});
+
+  	</script>
   	<div class="container">
   		<div class="clearfix">
   			<nav class="navbar navbar-default" role="navigation">
@@ -56,19 +63,19 @@
   			</nav>
   			<h1>Your closest matches are:</h1>
   			<div class="row">
-  				<div class="col-md-3"><img src="images/1.png" alt text="HottyGottaBoddy" width="200" height="175"></div>
+  				<div class="col-md-3"><img src="images/1.png" alt text="HottyGottaBoddy" width="200" height="175" rel="tooltip" data-placement="bottom" title="Benson Earth Sciences Floor 2, room 206."></div>
   				<div class="col-md-9"><h2>Tutor me in CS - $20/H</h2>
   					<div class="row">Neet help learning for my CS 1300 class.</div></div>
   				</div>
   				<div class="row">
-  					<div class="col-md-3"><img src="images/2.png" alt text="HottyGottaBoddy" width="200" height="175"></div>
+  					<div class="col-md-3"><img src="images/2.png" alt text="HottyGottaBoddy" width="200" height="175" rel="tooltip" data-placement="bottom" title="Biology Basement, room 1b12."></div>
   					<div class="col-md-9"><h2>Unclog staff bathroom toilet - $100/H</h2>
   						<div class="row">If you want I'll do anything for some extra oil...</div></div>
   					</div>
   					<div class="row">
-  						<div class="col-md-3"><img src="images/3.png" alt text="HottyGottaBoddy" width="200" height="200"></div>
-  						<div class="col-md-9"><h2>Gym Buddy - $4/H</h2>
-  							<div class="row">Not looking for coach, but looking for a buddy to work out with.</div></div>
+  						<div class="col-md-3"><img src="images/3.png" alt text="HottyGottaBoddy" width="200" height="200" rel="tooltip" data-placement="bottom" title="EC South Tower, floor 2."	></div>
+  						<div class="col-md-9"><h2>Back end server help - S25/H</h2>
+  							<div class="row">Looking for Masters student to help set up back end server for site.</div></div>
   						</div>
   					</div>
   				</div>
