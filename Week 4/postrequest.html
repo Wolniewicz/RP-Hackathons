@@ -1,1 +1,118 @@
-postrequest
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buff Helpers</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Buff Helpers</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">My Profile</a></li>
+                            <li class="active"><a href="#">Find help</a></li>
+                            <li><a href="#">Find Job</a></li>
+
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nearest to you">
+                            </div><form>
+                                <input type="BUTTON" value="Submit" onclick="window.location.href='profile.html'"> </input>
+                            </form>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right"></ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <h1 text-aligh="center">Create Request</h1>
+                        </div>
+                        </br>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="AboutUser">Task Description:</label>
+                                <textarea class="form-control input-sm" rows="3" placeholder="Enter Text Here" id="AboutUser"></textarea>
+                            </div>
+                            </br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="bidamount">Pay:</label></br>
+                                        <input type="radio" name="bidamount" value="$20" />$20</br>
+                                        <input type="radio" name="bidamount" value="$30" />$30</br>
+                                        <input type="radio" name="bidamount" value="$40" />$40</br>
+                                        <input type="radio" name="bidamount" value="$50" />$50</br>
+                                        <input type="radio" name="bidamount" value="Other" />Other: <input type="text" placeholder="amount"></input></br>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="time&date">Time and Date:</label></br></br>
+                                        <input type="datetime-local" name="time&date" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Location">Location:</label>
+                                <input type="text" class="form-control input-sm" id="InputPassword" placeholder="Ex:Hallet Hall/on-campus Boulder, CO">
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#confirm">Submit</button>
+                                    <span class="help-block">All fields must be filled out.</span>
+                                </div>
+                            </div>
+                        </form>
+                            <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="confirm-popupLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Click to exit">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Confirm and Payment</h4>
+                                        </div>
+                                        <div class="modal-body" data-container="body" data-toggle="popover" data-placement="top" data-content="Top 'x' to close, all information may not be up to date">
+                                            <label for="payment">Enter Credit Card info:</label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
