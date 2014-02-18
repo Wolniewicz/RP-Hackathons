@@ -4,23 +4,28 @@ from flask import request
 from flask import render_template
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index ():
-    return 'Hello World!'
+    name = request.args.get('name', '')
+    return "Hello " + name
+    #return render_template('home.html', name=name)
 
 
 @app.route('/search', methods=['POST', 'GET'])
 def search():
     # the code below is executed if the request method
     # was GET or the credentials were invalid
-    temp = request.args.get('n', '')
-    temp2 = request.args.get('query', '')
-    if temp == '1' and temp2 == 'cardinal':
+    search = request.args.get('n', '')
+    bird = request.args.get('query', '')
+    if search == '1' and bird == 'cardinal':
     	return '1 cardinal'
-    if temp == '1':
+    	#return render_template('CHANGENAME.html')
+    if search	 == '1':
 	    return 'one result'
+	    #return render_template('CHANGENAME.html')
     else:
 	    return 'nothing passed'
+	    #return render_template('CHANGENAME.html')
 
 
 @app.route('/view')
