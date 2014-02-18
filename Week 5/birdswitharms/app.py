@@ -17,14 +17,14 @@ def search():
     search = request.args.get('n', '')
     bird = request.args.get('query', '')
     if search == '1' and bird == 'cardinal':
-    	return '1 cardinal'
-    	#return render_template('CHANGENAME.html')
+    	#return '1 cardinal'
+    	return render_template('search_cardinal.html')
     if search	 == '1':
-	    return 'one result'
-	    #return render_template('CHANGENAME.html')
+	    #return 'one result'
+	    return render_template('search_one_search.html')
     else:
-	    return 'nothing passed'
-	    #return render_template('CHANGENAME.html')
+	    #return 'nothing passed'
+	    return render_template('search_none.html')
 
 
 @app.route('/view')
