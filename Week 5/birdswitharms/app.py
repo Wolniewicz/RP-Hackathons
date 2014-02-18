@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -12,8 +13,10 @@ def resume():
 
 
 @app.route('/view')
-def view():
-	return 'View Page'
+@app.route('/view/<birdname>')
+def view(birdname=None):
+	return render_template('view.html', birdname=birdname)
+   
 
 
 
