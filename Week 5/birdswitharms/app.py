@@ -6,8 +6,8 @@ app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 def index ():
     name = request.args.get('name', '')
-    return "Hello " + name
-    #return render_template('home.html', name=name)
+    #return "Hello " + name
+    return render_template('home.html', name=name)
 
 
 @app.route('/search', methods=['POST', 'GET'])
