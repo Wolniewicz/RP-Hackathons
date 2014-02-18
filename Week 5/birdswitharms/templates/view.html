@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+</style>
+<body>
+  <div class="container">
+    <!--nav bar-->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">People with Bird Bodies</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Username</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        {%if name==cardinal}
+          <img src="http://www.iywib.com/birds_with_arms9999991.jpg" alt="Smiley face" height="180" width="180" class="navbar-right">
+        {%if name==bluejay}
+          <img src="http://img.photobucket.com/albums/v295/pixelcloud/tommy_jay.png" alt="Smiley face" height="180" width="180" class="navbar-right">
+        {%if name==hawks}
+          <img src="http://24.media.tumblr.com/tumblr_lzvt07nR3H1rn3rj8o1_500.jpg" alt="Smiley face" height="180" width="180" class="navbar-right">
+        {% else %}
+          <img src="http://www.burdr.com/wp-content/uploads/2011/06/darth-vader-bird-with-arms1.jpg" alt="Smiley face" height="180" width="180" class="navbar-right">
+        {% endif %}
+      </div>
+      <div class="col-lg-9 col-md-3 col-sm-3">
+        <ul>
+          <li><font size="4"><u>Name</u>: Mr. Strong Arm</font></li><br>
+          <li><font size="4"><u>Special Skills</u>: Strength</font></li><br>
+          <li><font size="4"><u>Type</u>: {{ birdname }}</font></li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1">
+        <h3>
+          <!--<u>These are who he hangs out with</u>:-->
+        </h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-2">
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-2">
+        
+      </div>
+    </div>
+  </div> <!-- container -->
+</body>
+</html>
